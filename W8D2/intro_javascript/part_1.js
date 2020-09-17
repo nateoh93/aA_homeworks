@@ -10,6 +10,7 @@ function mysteryScoping1() {
 // in block; in block
 
 function mysteryScoping2() {
+    debugger
     const x = 'out of block';
     if (true) {
         const x = 'in block';
