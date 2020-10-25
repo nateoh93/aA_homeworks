@@ -25,13 +25,3 @@ app.use("/api/tweets", tweets);
 
 app.use(passport.initialize());
 require('./config/passport')(passport);
-
-// app.get("/", (req, res) => {
-//     const user = new User({
-//         handle: 'jim',
-//         email: 'jim@jim.jim',
-//         password: 'jimisgreat123'
-//     })
-//     user.save()
-//     res.send("Hellow World!")
-// })
