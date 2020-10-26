@@ -4,16 +4,16 @@ import TweetCompose from './tweets_compose';
 
 const mapStateToProps = (state) => {
   
-  let newTweet;
-  if (state.tweets) {
-    newTweet = state.tweets.new;
-  } else {
-    newTweet = ''
-  }
+  // let newTweet;
+  // if (state.tweets) {
+  //   newTweet = state.tweets.new;
+  // } else {
+  //   newTweet = ''
+  // }
   
   return {
     currentUser: state.session.user,
-    newTweet: newTweet
+    newTweet: state.tweets.new
   };
 };
 
